@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>FEWD</title>
+    
+    <!-- 960 CSS FRAMEWORK --> 
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/960_12_col.css" />
+
+     <!-- EDITABLE STYLE SHEET  --> 
+<!--     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+ -->    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
+    
+</head>
+
+<body>
+<div id="wrapper">
+    <div class='' id='nav'>
+        <div id='nav_wrap' class='container_12'>
+            
+            <h1>FEWD</h1>
+            
+            <ul>
+                <li><a href="index.html">Browse</a></li>
+                <li><a href="library.html">Library</a></li>
+            </ul>
+            <div id= 'submit'>
+                <a>Submit</a>
+            </div>
+            <div id='player_controls' class='float_container'>
+                <img id='skip_back' src="images/skip.png">
+                <img id='play_button_nav' src="images/white_play_button.png">
+                <img id='skip_forward' src="images/skip.png">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="container" class="container_12">
+            
+  <div id='main_content' class='float_container'>
+    
+
+    <div id='library_wrapper'>
+        <div id='library_menu'>
+            <ul>
+                <li id='librarySectionLink' class='activated'><a href="#">Library</a></li>
+                <li id='playlistSectionLink'><a href="#">Playlists</a></li>
+            </ul>
+        </div>
+        <div id='libraryWrap'>
+            <table id='libraryTable'>
+                <thead id='tableHeader'>
+                    <th></th>
+                    <th class='song_nav'><a href="#">Song</a></th>
+                    <th class='time_nav'><a href="#">Time</a></th>
+                    <th class='artist_nav library_nav_selected'><a href="#">Artist</a></th>
+                    <th class='date_nav'><a href="#">Date</a></th>
+                </thead>
+            </div><!--library nav-->
+            <tbody id='tableBody'>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+                <tr>
+                    <td class='hoverPlay'><img class='miniPlay' src="images/blue_play-button.svg"></td>
+                    <td>Song Name</td>
+                    <td>3:33</td>
+                    <td>Artist Name</td>
+                    <td>9/8/13</td>
+                </tr>
+            </tbody>
+        </div>
+
+        </div>
+
+    </div><!-- END #container --> 
+
+    <div id='submit_body'>
+        <div class="arrow-up"></div>
+        <form id='submit_form'>
+            <h1 id='submit_header'>SUBMIT A TRACK</h1>
+            <ul>
+                <li>URL: <input type='text' name='URL' id='url_input' placeholder='http://wwww.youtube.com/watch?v=Nevnq7MvVTI'></li>
+                
+                <li>Artist: <input type='text' name= 'artist' id='artist_input' placeholder='The Beatles'></li>
+                <li>Song: <input type='text' name='song' id='song_input' placeholder='Happiness is a Warm Gun'></li>
+                <span id='genre_drop'>Select Genre:</span>
+                <select id="genreList" onchange= '#'>
+                  <option></option>
+                  <option>Rock</option>
+                  <option>Pop</option>  
+                  <option>R&amp;B</option>
+                  <option>Electronic</option>
+                  <option>Hip-Hop</option>
+                  <option>Jazz</option>
+                  <option>Country</option>
+                  <option>International</option>
+                  <option>Other</option>
+                </select>
+
+                <li>Subgenre: <input type='text' name='song' id='genre_input' placeholder ='Psychedelic Rock'></li>
+
+                <li><input id='submit_button' type='submit' name='submit' value='mmmGO!'</li>
+            </ul>
+        </form>
+    </div><!--submit-->
+<!-- <div id="ytapiplayer"></div> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript" src='http://code.jquery.com/ui/1.10.3/jquery-ui.js'></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>var params = { allowScriptAccess: "always" };</script>
+
+<script type="text/javascript" src='js/wzom.js'></script>
+
+<script type="text/javascript" src="js/youtubeplayer.js"></script>
+
+
+</body>
+
+</html>
+
